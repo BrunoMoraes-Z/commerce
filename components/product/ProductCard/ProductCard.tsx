@@ -39,7 +39,7 @@ const ProductCard: FC<Props> = ({
 
   return (
     <Link href={`/product/${product.slug}`}>
-      <a className={rootClassName} aria-label={product.name}>
+      <a className={rootClassName} aria-label={product.name} id={product.id}>
         {variant === 'slim' && (
           <>
             <div className={s.header}>
